@@ -934,7 +934,121 @@ ___WEB_PERMISSIONS___
 
 ___TESTS___
 
-scenarios: []
+scenarios:
+- name: "Basic widget initialisation"
+  code: |-
+    var mockData = {
+      widgetKey: 'test-key-123',
+      autoRender: true,
+      visibilityMode: 'showAll',
+      pushEventsToDataLayer: false,
+      enableOnReady: false
+    };
+
+    mock('copyFromWindow', function(key) {
+      if (key === 'Trengo') return null;
+    });
+
+    mock('injectScript', function(url, success, failure, cacheToken) {
+      success();
+    });
+
+    var windowTrengo;
+    mock('setInWindow', function(key, value) {
+      if (key === 'Trengo') windowTrengo = value;
+    });
+
+    runCode(mockData);
+
+    assertThat(windowTrengo.key).isEqualTo('test-key-123');
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Widget with events enabled"
+  code: |-
+    var mockData = {
+      widgetKey: 'test-key-456',
+      autoRender: true,
+      visibilityMode: 'showAll',
+      pushEventsToDataLayer: true,
+      enableOnReady: true,
+      enableOnOpen: true,
+      enableOnClose: true
+    };
+
+    mock('copyFromWindow', function(key) {
+      if (key === 'Trengo') return null;
+    });
+
+    mock('injectScript', function(url, success, failure, cacheToken) {
+      success();
+    });
+
+    var windowTrengo;
+    mock('setInWindow', function(key, value) {
+      if (key === 'Trengo') windowTrengo = value;
+    });
+
+    mock('createQueue', function(name) {
+      return function() {};
+    });
+
+    runCode(mockData);
+
+    assertThat(windowTrengo.key).isEqualTo('test-key-456');
+    assertThat(windowTrengo.on_ready).isDefined();
+    assertThat(windowTrengo.on_open).isDefined();
+    assertThat(windowTrengo.on_close).isDefined();
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Contact data pre-fill"
+  code: |-
+    var mockData = {
+      widgetKey: 'test-key-789',
+      contactEmail: 'john@example.com',
+      contactName: 'John Doe',
+      contactCustomFields: [
+        {fieldId: '12345', value: 'Value A'}
+      ]
+    };
+
+    mock('copyFromWindow', function(key) {
+      if (key === 'Trengo') return null;
+    });
+
+    mock('makeInteger', function(val) { return parseInt(val, 10); });
+
+    var windowTrengo;
+    mock('setInWindow', function(key, value) {
+      if (key === 'Trengo') windowTrengo = value;
+    });
+
+    mock('injectScript', function(url, success) { success(); });
+
+    runCode(mockData);
+
+    assertThat(windowTrengo.contact_data.email).isEqualTo('john@example.com');
+    assertThat(windowTrengo.contact_data.name).isEqualTo('John Doe');
+    assertApi('gtmOnSuccess').wasCalled();
+
+- name: "Script failure calls gtmOnFailure"
+  code: |-
+    var mockData = {
+      widgetKey: 'test-key-fail'
+    };
+
+    mock('copyFromWindow', function(key) {
+      if (key === 'Trengo') return null;
+    });
+
+    mock('injectScript', function(url, success, failure) {
+      failure();
+    });
+
+    mock('setInWindow', function() {});
+
+    runCode(mockData);
+
+    assertApi('gtmOnFailure').wasCalled();
 
 
 ___NOTES___
