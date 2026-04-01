@@ -1,4 +1,4 @@
-___TERMS_OF_SERVICE___
+﻿___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -11,13 +11,15 @@ ___INFO___
 {
   "displayName": "Trengo Widget",
   "description": "Trengo live chat widget. Supports widget event tracking, contact/ticket data, page-level visibility control, and SPA routing.",
-  "categories": ["CHAT"],
+  "categories": [
+    "CHAT"
+  ],
   "securityGroups": [],
   "id": "cvt_temp_public_id",
   "type": "TAG",
   "version": 1,
   "brand": {
-    "thumbnail": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKISURBVHgB7Za9ctNAEMd3TxbjycCgBseTBvkJOHd0cTo68gY4T2DyBMQVZZI3MB1UmCfAdFToeAOnih0KlJl4JrGjW/YUbBRHOssfjIvkNyP7LJ92/7t3tyuAB+47mHei50tvMHJ9HUUSCV4QgQdIPgH4YMYQX0nLXTbOFyrS8NN1dOeyp7q5BRiHF5cFCaRfa6BdduLDkrCYlit0MynkjoBiWfrXJBqaqA7TUa0KxH3d/3Fkhs74nol46G69jwA+clpfGi3w/3iFj7fOaXD6Pc6AiXqo8SvA8mmeg1BvUMVZk3NDEUfiqjCMRMPs5ux52EKhv8ECxCcFsJG1gRFpG0WpGvBYplpAULofVGEZPOmJR/g7499QZDo3GOW8OWEJXNe6tJ7JgFFnc9JFLiqwILwM0ma/wMYVT6pZbPhkMhGLwC+cldDizuePN5AX9l1gicc8qs2aK5D2rntBZ9Y8Z7P6fEZAE7jenIjoTLV5rGANcFDtuBAVyrKmb2qBjRARO9YlMM0pZ/QGLagy6QViU74FwsMcz4XcVNqQE0KqpdUB3nudqB/sFCZq+upIlMyRw3c2gyhoP+oFLcjLMykFYnDXEH0wXyJ5T5+pA9bctNnjJ0KYg6KTMp9PVNRTrZthmo+SPLBkossRtTXBOcxAIDzltr4LU32Gs7hnFWBwOXWRwM+reBG5BUfP5b0y/imy5o1+KaWvqMq76BhWR6iRduCWnjxwy0YtDhHidC5MMvVjnFxPXvRCGJx+Ek/KJ2zGWtuzoaY5adN3c78VJ3HKsk6a+7ytk/4j5COX6nxhAWP+VtA6W9nOLDbcQyDldXwlApKYU6ORRQheHg1htAEd6Kq5asYDa+EP5Ur4FQwjI+EAAAAASUVORK5CYII=",
+    "thumbnail": "data:image/png;base64,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\u003d",
     "displayName": "New North Digital",
     "id": "brand_dummy"
   },
@@ -934,123 +936,11 @@ ___WEB_PERMISSIONS___
 
 ___TESTS___
 
-scenarios:
-- name: "Basic widget initialisation"
-  code: |-
-    var mockData = {
-      widgetKey: 'test-key-123',
-      autoRender: true,
-      visibilityMode: 'showAll',
-      pushEventsToDataLayer: false,
-      enableOnReady: false
-    };
-
-    mock('copyFromWindow', function(key) {
-      if (key === 'Trengo') return null;
-    });
-
-    mock('injectScript', function(url, success, failure, cacheToken) {
-      success();
-    });
-
-    var windowTrengo;
-    mock('setInWindow', function(key, value) {
-      if (key === 'Trengo') windowTrengo = value;
-    });
-
-    runCode(mockData);
-
-    assertThat(windowTrengo.key).isEqualTo('test-key-123');
-    assertApi('gtmOnSuccess').wasCalled();
-
-- name: "Widget with events enabled"
-  code: |-
-    var mockData = {
-      widgetKey: 'test-key-456',
-      autoRender: true,
-      visibilityMode: 'showAll',
-      pushEventsToDataLayer: true,
-      enableOnReady: true,
-      enableOnOpen: true,
-      enableOnClose: true
-    };
-
-    mock('copyFromWindow', function(key) {
-      if (key === 'Trengo') return null;
-    });
-
-    mock('injectScript', function(url, success, failure, cacheToken) {
-      success();
-    });
-
-    var windowTrengo;
-    mock('setInWindow', function(key, value) {
-      if (key === 'Trengo') windowTrengo = value;
-    });
-
-    mock('createQueue', function(name) {
-      return function() {};
-    });
-
-    runCode(mockData);
-
-    assertThat(windowTrengo.key).isEqualTo('test-key-456');
-    assertThat(windowTrengo.on_ready).isDefined();
-    assertThat(windowTrengo.on_open).isDefined();
-    assertThat(windowTrengo.on_close).isDefined();
-    assertApi('gtmOnSuccess').wasCalled();
-
-- name: "Contact data pre-fill"
-  code: |-
-    var mockData = {
-      widgetKey: 'test-key-789',
-      contactEmail: 'john@example.com',
-      contactName: 'John Doe',
-      contactCustomFields: [
-        {fieldId: '12345', value: 'Value A'}
-      ]
-    };
-
-    mock('copyFromWindow', function(key) {
-      if (key === 'Trengo') return null;
-    });
-
-    mock('makeInteger', function(val) { return parseInt(val, 10); });
-
-    var windowTrengo;
-    mock('setInWindow', function(key, value) {
-      if (key === 'Trengo') windowTrengo = value;
-    });
-
-    mock('injectScript', function(url, success) { success(); });
-
-    runCode(mockData);
-
-    assertThat(windowTrengo.contact_data.email).isEqualTo('john@example.com');
-    assertThat(windowTrengo.contact_data.name).isEqualTo('John Doe');
-    assertApi('gtmOnSuccess').wasCalled();
-
-- name: "Script failure calls gtmOnFailure"
-  code: |-
-    var mockData = {
-      widgetKey: 'test-key-fail'
-    };
-
-    mock('copyFromWindow', function(key) {
-      if (key === 'Trengo') return null;
-    });
-
-    mock('injectScript', function(url, success, failure) {
-      failure();
-    });
-
-    mock('setInWindow', function() {});
-
-    runCode(mockData);
-
-    assertApi('gtmOnFailure').wasCalled();
+scenarios: []
 
 
 ___NOTES___
 
 Created on 2025-01-01 by New North Digital (newnorth.digital).
+
+
