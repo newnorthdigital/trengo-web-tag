@@ -1,5 +1,5 @@
 homepage: "https://trengo.com"
 documentation: "https://github.com/newnorthdigital/trengo-web-tag/blob/main/README.md"
 versions:
-  - sha: REPLACE_WITH_COMMIT_SHA
+  - sha: 7b1017517cd34d0453ca8371d9826c345ebb755a
     changeNotes: "Initial release - Trengo live chat widget GTM template with event tracking, contact/ticket data, page visibility, and SPA support."
