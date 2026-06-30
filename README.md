@@ -87,7 +87,7 @@ The widget will still render if the visitor has an active chat session, even on 
 
 ## Author
 
-Created by [New North Digital](https://newnorth.digital?utm_source=github&utm_medium=gtm-template&utm_campaign=trengo-web-tag)
+Created and maintained by [Freek Kampen](https://freekkampen.com) at [New North Digital](https://newnorth.digital?utm_source=github&utm_medium=gtm-template&utm_campaign=trengo-web-tag)
 
 ## License
 
